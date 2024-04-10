@@ -3,6 +3,13 @@
 
 // Write your JavaScript code.
 
+async function goToCartPage(subid, price) {
+    var cartid = 2;
+    var cdate = new Date();
+    const response = await fetch(`https://localhost:7238/api/Cart/api/CartAddSubscription/cart=${cartid}&cdate=${price}&cartid=${cdate}&price=${subid}`);
+    const data = await response.json();
+    window.location.href("https://localhost:7228/Cart");
+}
 
 async function displayUserData(UID) {
     const response = await fetch(`https://localhost:7228/api/Users/${UID}`);

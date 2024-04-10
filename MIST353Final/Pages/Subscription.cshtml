@@ -1,0 +1,76 @@
+﻿@page
+@model MIST353Final.Pages.SubscriptionModel
+@{
+    ViewData["Title"] = "Organize, analyze, and leverage your weather data like never before";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>At DataMaster, we understand the power of data. Whether you're a small business, a budding entrepreneur, or an established enterprise, harnessing the potential of your data can unlock valuable insights and drive informed decision-making. Our platform offers cutting-edge tools and intuitive interfaces designed to streamline your data organization process and maximize your data's potential.</p>
+
+<h2>Why DataMaster?</h2>
+
+<ul>
+    <li><strong>Streamlined Data Management:</strong> Say goodbye to scattered spreadsheets and disjointed databases. Our platform offers a centralized hub for all your data needs, making it easier than ever to manage and access your information.</li>
+    <li><strong>Powerful Analytics:</strong> Unlock the true value of your data with our advanced analytics tools. From predictive modeling to trend analysis, DataMaster empowers you to extract meaningful insights and drive actionable outcomes.</li>
+    <li><strong>Secure and Scalable:</strong> We understand the importance of data security and scalability. That's why we've built our platform with robust security features and flexible infrastructure, ensuring your data stays safe and accessible, no matter how large your organization grows.</li>
+</ul>
+
+<h2>Subscription Options</h2>
+
+<p>Choose the plan that best fits your organization's needs:</p>
+
+<h3>Basic Plan</h3>
+
+<ul>
+    <li>Ideal for small businesses and startups</li>
+    <li>
+        Features include:
+        <ul>
+            <li>Data storage for up to 100 GB</li>
+            <li>Basic analytics tools</li>
+            <li>Email support</li>
+        </ul>
+    </li>
+    <li>Price: $29.99/month</li>
+</ul>
+
+<button type="button" onclick="goToCartPage('basicCart',29.99)" id="basicCartButton">Add to Cart</button>
+
+<h3>Standard Plan</h3>
+
+<ul>
+    <li>Perfect for growing businesses and mid-sized enterprises</li>
+    <li>
+        Features include:
+        <ul>
+            <li>Data storage for up to 500 GB</li>
+            <li>Advanced analytics tools</li>
+            <li>Priority email and chat support</li>
+            <li>Customizable dashboards</li>
+        </ul>
+    </li>
+    <li>Price: $79.99/month</li>
+</ul>
+<button type="button" onclick="goToCartPage('standardCart', 79.99)" id="standardCartButton">Add to Cart</button>
+
+<h3>Enterprise Plan</h3>
+
+<ul>
+    <li>Tailored for large enterprises and organizations with complex data needs</li>
+    <li>
+        Features include:
+        <ul>
+            <li>Unlimited data storage</li>
+            <li>Premium analytics suite, including machine learning capabilities</li>
+            <li>24/7 dedicated support</li>
+        </ul>
+    </li>
+    <li>Price: $159.99/month</li>
+</ul>
+<button type="button" onclick="goToCartPage('enterpriseCart', 159.99)" id="enterpriseCartButton">Add to Cart</button>
+
+<h2>Get Started Today</h2>
+
+<p>Ready to revolutionize the way you handle data? Sign up for DataMaster now and take the first step towards unlocking the full potential of your weather data.</p>
+
+<p>Have questions or need assistance? Contact our support team at <a href="mailto:support@datamaster.com">support@datamaster.com</a> or via live chat on our website.</p>
