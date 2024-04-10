@@ -1,0 +1,12 @@
+﻿@page
+@model MIST353Final.Pages.UserModel
+@{
+    var UID = HttpContext.Request.Query["UID"];
+}
+<h2 id ="userFirstName" style="visibility: hidden;"> </h2>
+<div id="userLastname" style="visibility: hidden"> </div>
+<div id="userEmail" style="visibility:hidden"></div>
+
+<script type="module">
+    displayUserData(@UID)
+</script>
