@@ -3,6 +3,14 @@
 @{
     var UID = HttpContext.Request.Query["UID"];
 }
+
+<h1>Get User Data</h1>
+<h2>This is designed for an admin to see User data and gain access to user information.</h2>
+<h3>Click Here!</h3>
+
+<button type="button" onclick="goToCartPage('basicCart',29.99)" id="basicCartButton">Get User Data</button>
+
+
 <h2 id ="userFirstName" style="visibility: hidden;"> </h2>
 <div id="userLastname" style="visibility: hidden"> </div>
 <div id="userEmail" style="visibility:hidden"></div>
