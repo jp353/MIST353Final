@@ -9,6 +9,8 @@
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <header b-l0yelhcuss="">
             </button>  
             <div b-l0yelhcuss="" class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
@@ -28,6 +30,14 @@
             User
             <i class="fa fa-odnoklassniki" style="font-size:15px"></i>
         </a>
+
+        <span style="margin-right: 20px;"></span>
+
+        <a class="nav-link text-dark" href="/Feedback">
+            Feedback
+            <i class="fa fa-check-square" style="font-size:15px;"></i>
+        </a>
+
                 
             </ul>
 
@@ -47,5 +57,58 @@
         innovative solutions that drive success.
     </p>
 </div>
+<hr>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>U.S. Regions Climate Data</title>
+    <style>
+        .table-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px; /* Adjust margin as needed */
+        }
+    </style>
+</head>
+<body>
+    <h1 class="text-center">U.S. Regions Climate Data</h1>
 
+    <div class="table-container">
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Region</th>
+                    <th>Get Climate Data</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>North</td>
+                    <td><button onclick="getClimateData('North')">Get Data</button></td>
+                </tr>
+                <tr>
+                    <td>West</td>
+                    <td><button onclick="getClimateData('West')">Get Data</button></td>
+                </tr>
+                <tr>
+                    <td>Midwest</td>
+                    <td><button onclick="getClimateData('Midwest')">Get Data</button></td>
+                </tr>
+                <tr>
+                    <td>South</td>
+                    <td><button onclick="getClimateData('South')">Get Data</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        function getClimateData(region) {
+            // Placeholder function to get climate data for the specified region
+            console.log("Getting climate data for " + region + "...");
+            // Add your functionality to get climate data here
+        }
+    </script>
+</body>
+</html>
 
