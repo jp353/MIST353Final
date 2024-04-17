@@ -51,7 +51,7 @@ If a new group of developers were to take over our application, they would need 
 ### Created by John Pino
 The Home page will be the first page shown when you visit our website. It will contain information and the purpose of our company, show our company logo, navigation menu to help explore the site, and a demo of our subcription to give an idea of what our cite entails. The demo will be a representative view of a United States map seperated into 4 regions based on temperature and weather data. It will encourage visitors to explore further of our application!
 
-### The application will access the public NOAA climate API to retrieve climate data and insert it into the database. The API associated with the stored procedure spSearchClimateData, however, will be responsible for accessing the app's database and displaying information to the user based on their specifications. 
+The application will access the public NOAA climate API to retrieve climate data and insert it into the database. The API associated with the stored procedure spSearchClimateData, however, will be responsible for accessing the app's database and displaying information to the user based on their specifications. 
 
 ## Page 2: Privacy Policy Page
 ### Created by Hunter Latner
