@@ -7,9 +7,9 @@ This guide will walk you through the steps to deploy our application on a blank 
 ## Steps:
 1. Clone the repository.
 2. Create the database.
-3. Start the startup project.
-4. Launch the solution.
-
+3. Open the solution.
+4. Select the appropriate startup project(s).
+5. Run the solution.
 
 ## Pitfalls to Avoid:
 - Don't forget to select the startup project.
@@ -24,14 +24,17 @@ This guide will walk you through the steps to deploy our application on a blank 
 
 # API Documentation: 
 
-## API 1:
-- **What it does:** [Description of what the API does.]
+## API 1: PostSub - Kayla Guyton
+- This API adds the chosen subcription (Enterprise) to the cart via the Enterprise "Add to Cart" button on the Subscription page.
 - **Inputs:** [List of inputs required.]
 - **Outputs:** [Description of outputs produced.]
-- **How to Use:** [Instructions on how to use the API.]
+- **How to Use:** Click on the "Add to Cart" button under the Enterprise subscription Type on the Subscription Page.
 
-[Repeat this structure for each API.]
-
+## API 2: CartService - Kayla Guyton
+- This API allows the user to check the progress their cart while visiting the webpage.
+- **Inputs:** [List of inputs required.]
+- **Outputs:** [Description of outputs produced.]
+- **How to Use:** Click on the cart button on the HomePage. This feature has not been implentented but ideally this is what would happen if more time allowed. 
 # Application Overview
 
 Our application provides a data organizing tool for insurance actuaries to sort weather data for client presentations. It also allows everyday users to easily view local weather data. Our goal is to generate revenue through a subscription-based platform. Key features include data retrieval, user feedback, user management, cart functionality, and subscription management.
@@ -73,7 +76,7 @@ The Feedback page will allow users to leave their thoughts and experience. Users
 The UserData page serves as a platform for managing account-related information. Users can access this page to view and edit their personal details, such as name, email address, password, and any other relevant information associated with their account. Unlike the Subscription page, the UserData page does not utilize an API for data retrieval or manipulation. Instead, it interacts directly with the database to fetch and update user data, leveraging traditional database operations without the need for intermediary APIs. Users can interact with input fields and buttons to modify their account information, with changes being reflected immediately upon submission. This page provides users with a centralized location to manage their account details, enhancing their overall experience with the platform.
 
 ## References
-ChatGPT Prompt 1: Please modify this to achieve the functionality of the following stored procedure: (I input SPSearchClimateData and Climate Controller)
-Prompt 2: Please remove syntax errors from the following: (I input Climate Controller)
-Prompt 3: Please remove syntax errors from the following: (I input Feedback Controller)
-Prompt 4: Used to write mock descriptions for paragraphs on both home page and subscription page. 
+#### ChatGPT Prompt 1: Please modify this to achieve the functionality of the following stored procedure: (I input SPSearchClimateData and Climate Controller)
+#### Prompt 2: Please remove syntax errors from the following: (I input Climate Controller)
+#### Prompt 3: Please remove syntax errors from the following: (I input Feedback Controller)
+#### Prompt 4: Used to write mock descriptions for paragraphs on both home page and subscription page. 
