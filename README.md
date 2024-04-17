@@ -1,5 +1,47 @@
 # MIST353Project4
 
+# Deployment Guide
+
+This guide will walk you through the steps to deploy our application on a blank VM.
+
+## Steps:
+1. Clone the repository.
+2. Create the database.
+3. Start the startup project.
+4. Launch the solution.
+
+
+## Pitfalls to Avoid:
+- Don't forget to select the startup project.
+- Ensure the database is created on your VM.
+- Make sure the bootstrap is downloaded.
+- Ensure your host address matches your VM for linking purposes.
+
+## Where to Go for Help:
+- Office hours
+- ChatGPT
+- W3 Schools
+
+# API Documentation: 
+
+## API 1:
+- **What it does:** [Description of what the API does.]
+- **Inputs:** [List of inputs required.]
+- **Outputs:** [Description of outputs produced.]
+- **How to Use:** [Instructions on how to use the API.]
+
+[Repeat this structure for each API.]
+
+# Application Overview
+
+Our application provides a data organizing tool for insurance actuaries to sort weather data for client presentations. It also allows everyday users to easily view local weather data. Our goal is to generate revenue through a subscription-based platform. Key features include data retrieval, user feedback, user management, cart functionality, and subscription management.
+
+# Developer Documentation
+
+If a new group of developers were to take over our application, they would need to know:
+- All necessary materials to clone the repository and database are located in our GitHub repository. DB file is located within DB branch, not master. 
+- Follow the deployment steps outlined above to set up the application on a new VM.
+
 ## Page 1: Home Page
 ### Created by John Pino
 ### The Home page will be the first page shown when you visit our website. It will contain information and the purpose of our company, show our company logo, navigation menu to help explore the site, and a demo of our subcription to give an idea of what our cite entails. The demo will be a representative view of a United States map seperated into 4 regions based on temperature and weather data. It will encourage visitors to explore further of our application!
