@@ -42,6 +42,8 @@ If a new group of developers were to take over our application, they would need 
 - All necessary materials to clone the repository and database are located in our GitHub repository. DB file is located within DB branch, not master. 
 - Follow the deployment steps outlined above to set up the application on a new VM.
 
+# Webpage Documentation
+
 ## Page 1: Home Page
 ### Created by John Pino
 ### The Home page will be the first page shown when you visit our website. It will contain information and the purpose of our company, show our company logo, navigation menu to help explore the site, and a demo of our subcription to give an idea of what our cite entails. The demo will be a representative view of a United States map seperated into 4 regions based on temperature and weather data. It will encourage visitors to explore further of our application!
