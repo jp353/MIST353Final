@@ -35,7 +35,19 @@ This guide will walk you through the steps to deploy our application on a blank 
 - **Inputs:** CartID
 - **Outputs:** Allow the previous cart information to view the information that was ideally added within another API (not created) that would have created the cart. This allows them to view the cart through their time on the website. 
 - **How to Use:** Click on the cart button on the HomePage. This feature has not been implentented but ideally this is what would happen if more time allowed.
+
+## API 3: GetClimateData - John Pino
+- This API allows the user to view the climate data related to a specified region.
+- **Inputs:** RNum
+- **Outputs:** Allows the user to view all data in the ClimateEvent table associated with the RNum they specified. The RNum is a foreign key from the Region table, which stores attributes for each region.  
+- **How to Use:** Click on one of the 4 labelled buttons on the HomePage and select the corresponding region.
   
+## API 4: LeaveFeedback - John Pino
+- This API allows the user to leave feedback based on their experiences with the Weather Zone service.
+- **Inputs:** RScore, RComment, RID (Auto-Increments)
+- **Outputs:** Allows the user to insert feedback into the database. Users can insert a comment within a limited number of characters and a score from 1 to 10 to rate their overall satisfaction with the service.
+- **How to Use:** Click on the Add Feedback button on the Feedback page. This feature is not yet integrated with JavaScript functionality on the webpage.
+
 # Application Overview
 
 Our application provides a data organizing tool for insurance actuaries to sort weather data for client presentations. It also allows everyday users to easily view local weather data. Our goal is to generate revenue through a subscription-based platform. Key features include data retrieval, user feedback, user management, cart functionality, and subscription management.
