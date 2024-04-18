@@ -54,7 +54,7 @@ The Home page will be the first page shown when you visit our website. It will c
 The application will access the public NOAA climate API to retrieve climate data and insert it into the database. The API associated with the stored procedure spSearchClimateData, however, will be responsible for accessing the app's database and displaying information to the user based on their specifications. 
 
 ## Page 2: Privacy Policy Page
-### Created by Hunter Latner
+### Created by Hunter Latterner
 The Privacy Policy page will allow users to read our privacy policy. The privacy policy will outline how our company collects, uses, discloses, and safeguards user information when using services or interacting with our site. Users can accept the privacy policy by checking the "I accept" box at the bottom of the policy.
 
 ## Page 3: Checkout Webpage
@@ -72,7 +72,7 @@ The Subscription page allows users to add a subscription to their cart based on 
 The Feedback page will allow users to leave their thoughts and experience. Users can access the page to view others reviews and can leave their own feedback by clicking "Leave Review". This will allow users to comment on their experience and also leave a rating of 1-5. It is designed to be very user-friendly and also can help us understand how different users experience our page.
 
 ## Page 6: UserData Page
-### Created by Hunter Latner
+### Created by Hunter Latterner
 The UserData page serves as a platform for managing account-related information. Users can access this page to view and edit their personal details, such as name, email address, password, and any other relevant information associated with their account. 
 
 Unlike the Subscription page, the UserData page does not utilize an API for data retrieval or manipulation. Instead, it interacts directly with the database to fetch and update user data, leveraging traditional database operations without the need for intermediary APIs. Users can interact with input fields and buttons to modify their account information, with changes being reflected immediately upon submission. This page provides users with a centralized location to manage their account details, enhancing their overall experience with the platform.
