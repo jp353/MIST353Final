@@ -12,8 +12,8 @@ async function goToCartPage(subid, price) {
 }
 
 async function displayUserData(UID) {
-    const response = await fetch(`https://localhost:7228/api/Users/${UID}`);
+    const response = await fetch(`https://localhost:7228/api/User/${UID}`);
     const data await response.json();
-    document.getElementById('userFirstName').innerHTML = data[0].userFirstName; 
+    document.getElementById('userFirstName').innerHTML = data[0].ufName; 
     document.getElementById('userFirstName').style.visibility = "visible";
 }

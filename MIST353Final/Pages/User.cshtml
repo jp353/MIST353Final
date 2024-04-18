@@ -1,20 +1,32 @@
 ﻿@page
 @model MIST353Final.Pages.UserModel
 @{
-    var UID = HttpContext.Request.Query["UID"];
+  
 }
-
+<body>
 <h1>Get User Data</h1>
 <p>This is designed for an admin to see User data and gain access to user information.</p>
 <p>Click Here!</p>
 
-<button type="button" onclick="goToCartPage('basicCart',29.99)" id="basicCartButton">Get User Data</button>
+<button onclick="getUserData" >Get User Data</button>
+<div id="userData"></div>
 
-
-<h2 id ="userFirstName" style="visibility: hidden;"> </h2>
-<div id="userLastname" style="visibility: hidden"> </div>
-<div id="userEmail" style="visibility:hidden"></div>
-
-<script type="module">
-    displayUserData(@UID)
+<script>
+    function getUserData() { 
+        console.log("Button Clicked!");
+    fetch(https://localhost:7228/api/User/${UID})
+            .then(response => response.json())
+            .then(data => {
+                const userDataElement = document.getElementById('userData');
+                userDataElement.innerHTML = '';
+                for (const user of data) {
+                    userDataElement.innerHTML += `<p>User ID: ${UID}, First Name: ${ufName}, Last Name: ${ulName}, Email: ${uEmail}</p>`;
+                }
+            })
+            .catch(error => {
+                console.error('Error fetching user data:', error);
+                alert('Failed to fetch user data.Please try again later.');
+            });
+    }
 </script>
+</body>
