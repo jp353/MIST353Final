@@ -67,10 +67,21 @@
     </li>
     <li>Price: $159.99/month</li>
 </ul>
-<button type="button" onclick="goToCartPage('enterpriseCart', 159.99)" id="enterpriseCartButton">Add to Cart</button>
+<button type="button" onclick="goToCartPage(2, 159.99)" id="enterpriseCartButton">Add to Cart</button>
 
 <h2>Get Started Today</h2>
 
 <p>Ready to revolutionize the way you handle data? Sign up for WeatherZone now and take the first step towards unlocking the full potential of your weather data.</p>
 
 <p>Have questions or need assistance? Contact our support team at <a href="mailto:support@weatherzone.com">support@weatherzone.com</a> or via live chat on our website.</p>
+
+
+    <script>
+    async function goToCartPage(subid, price) {
+        var cartid = 2;
+        var cdate = "02-02-2024";
+        const response = await fetch(`https://localhost:7228/api/Cart/api/CartAddSubscription/cart=${cartid}&cdate=${price}&cartid=${cdate}&price=${subid}`, {method:'POST'});
+        const data = await response.json();
+        window.location.href="https://localhost:7032/Cart";
+    }
+    </script>
