@@ -26,15 +26,16 @@ This guide will walk you through the steps to deploy our application on a blank 
 
 ## API 1: PostSub - Kayla Guyton
 - This API adds the chosen subcription (Enterprise) to the cart via the Enterprise "Add to Cart" button on the Subscription page.
-- **Inputs:** [List of inputs required.]
-- **Outputs:** [Description of outputs produced.]
+- **Inputs:** SubID, Price, CartID (Manually Coded), CDate (Manually Coded)
+- **Outputs:** Adds above inputs to user cart to be used in conjunction with API #2, CartService. Intended to add subscription details to the cart.
 - **How to Use:** Click on the "Add to Cart" button under the Enterprise subscription Type on the Subscription Page.
 
 ## API 2: CartService - Kayla Guyton
 - This API allows the user to check the progress their cart while visiting the webpage.
-- **Inputs:** [List of inputs required.]
-- **Outputs:** [Description of outputs produced.]
-- **How to Use:** Click on the cart button on the HomePage. This feature has not been implentented but ideally this is what would happen if more time allowed. 
+- **Inputs:** CartID
+- **Outputs:** Allow the previous cart information to view the information that was ideally added within another API (not created) that would have created the cart. This allows them to view the cart through their time on the website. 
+- **How to Use:** Click on the cart button on the HomePage. This feature has not been implentented but ideally this is what would happen if more time allowed.
+  
 # Application Overview
 
 Our application provides a data organizing tool for insurance actuaries to sort weather data for client presentations. It also allows everyday users to easily view local weather data. Our goal is to generate revenue through a subscription-based platform. Key features include data retrieval, user feedback, user management, cart functionality, and subscription management.
