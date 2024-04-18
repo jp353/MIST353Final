@@ -6,6 +6,8 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddScoped<IUserService, UserService>();
+builder.Services.AddScoped<IRatingService, RatingService>();
+builder.Services.AddScoped<IClimateService, ClimateService>();
 builder.Services.AddScoped<ICartService, CartService>();
 builder.Services.AddScoped<IPostSub, PostSub>();
 
@@ -23,7 +25,7 @@ builder.Services.AddCors(options =>
     options.AddPolicy("AllowMyRazorPagesApp",
         builder =>
         {
-            builder.WithOrigins("https://localhost:7032","https://localhost")
+            builder.WithOrigins("https://localhost:7032", "https://localhost")
             .AllowAnyHeader()
             .AllowAnyMethod();
         }
