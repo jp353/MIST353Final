@@ -1,4 +1,4 @@
-# MIST353Project4
+# MIST353 Final Peculiar Penguins (WeatherZone)
 
 # Deployment Guide
 
