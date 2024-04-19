@@ -53,10 +53,10 @@ This guide will walk you through the steps to deploy our application on a blank 
 - **Outputs:** Allows an admin to read all user data including User First Name, User Last Name, User Password, and User Email.
 - **How to Use:** Click the "Get User Data" button under the user page.
   ## API 6: - Hunter Latterner
-  - This API allows and admin to add a user to the webpage.
-  - **Inputs:** UID, UFName, ULName, UPassword, UEmail.
-  - **Outputs:** A new user is added to the webpage/database.
-  - **How to Use:** Click on the "Add User" button under the user page and add the users information.
+- This API allows and admin to add a user to the webpage.
+- **Inputs:** UID, UFName, ULName, UPassword, UEmail.
+- **Outputs:** A new user is added to the webpage/database.
+- **How to Use:** Click on the "Add User" button under the user page and add the users information.
 
 # Application Overview
 
