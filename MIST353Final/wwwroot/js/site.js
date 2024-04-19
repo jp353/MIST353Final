@@ -54,3 +54,29 @@ async function goToCartPage(subid, price) {
     window.location.href("https://localhost:7228/Cart");
 }
 
+async function getUserData(UID) {
+
+    const response = await fetch(`https://localhost:7228//api/User/${UID}`);
+    const data = await response.json();
+    var innerHtml = '<table class="table"><tr><th>ufName</th><th>ulName</th><th>uEmail</th></tr>';
+    for (let i = 0; i < data.length; i++) {
+        innerHtml += `<tr><td>${data[i].ufName}</td><td>${data[i].ulName}</td><td>${data[i].uEmail}</td></tr>`
+    }
+    innerHtml += "</table>";
+    document.getElementById('userData').innerHTML = innerHtml;
+    document.getElementById('userData').style.visibility = "visible";
+
+
+    function displayUserData(userData) {
+
+        if (userData && userData.length > 0) {
+            const eventList = document.getElementById('userDataList');
+            eventList.innerHTML = '';
+            userData.forEach(event => {
+                const listItem = document.createElement('li');
+                listItem.textContent = `User First Name: ${user.UFName}, User Last Name: ${user.ULName}, User Password: ${user.UPassword}, User Email: ${user.UEmail}`;
+                eventList.appendChild(listItem);
+            });
+        } else {
+            console.error('No users found');
+        }
