@@ -47,12 +47,14 @@ This guide will walk you through the steps to deploy our application on a blank 
 - **Inputs:** RScore, RComment, RID (Auto-Increments)
 - **Outputs:** Allows the user to insert feedback into the database. Users can insert a comment within a limited number of characters and a score from 1 to 10 to rate their overall satisfaction with the service.
 - **How to Use:** Click on the Add Feedback button on the Feedback page. This feature is not yet integrated with JavaScript functionality on the webpage.
+
 ## API 5: PostSub - Hunter Latterner
 - This API allows an admin to search current users of the website.
 - **Inputs:** UID.
 - **Outputs:** Allows an admin to read all user data including User First Name, User Last Name, User Password, and User Email.
 - **How to Use:** Click the "Get User Data" button under the user page.
-  ## API 6: - Hunter Latterner
+
+## API 6: - Hunter Latterner
 - This API allows and admin to add a user to the webpage.
 - **Inputs:** UID, UFName, ULName, UPassword, UEmail.
 - **Outputs:** A new user is added to the webpage/database.
