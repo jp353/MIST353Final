@@ -1,8 +1,6 @@
 ﻿@page
 @model MIST353Final.Pages.UserModel
-@{
-  
-}
+@{}
 <body>
 <h1>Get User Data</h1>
 <p>This is designed for an admin to see User data and gain access to user information.</p>
@@ -10,23 +8,13 @@
 
 <button onclick="getUserData" >Get User Data</button>
 <div id="userData"></div>
+<ul>
+
+</ul>
 
 <script>
-    function getUserData() { 
-        console.log("Button Clicked!");
-    fetch(https://localhost:7228/api/User/${UID})
-            .then(response => response.json())
-            .then(data => {
-                const userDataElement = document.getElementById('userData');
-                userDataElement.innerHTML = '';
-                for (const user of data) {
-                    userDataElement.innerHTML += `<p>User ID: ${UID}, First Name: ${ufName}, Last Name: ${ulName}, Email: ${uEmail}</p>`;
-                }
-            })
-            .catch(error => {
-                console.error('Error fetching user data:', error);
-                alert('Failed to fetch user data.Please try again later.');
-            });
-    }
+    
+        
+    
 </script>
 </body>
