@@ -54,3 +54,9 @@ async function goToCartPage(subid, price) {
     window.location.href("https://localhost:7228/Cart");
 }
 
+async function displayUserData(UID) {
+    const response = await fetch(`https://localhost:7228/api/Users/${UID}`);
+    const data await response.json();
+    document.getElementById('userFirstName').innerHTML = data[0].userFirstName; 
+    document.getElementById('userFirstName').style.visibility = "visible";
+}
