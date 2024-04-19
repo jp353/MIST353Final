@@ -5,7 +5,7 @@
 
 async function getClimateEvents(RNum) {
 
-    const response = await fetch(`https://localhost:7228/api/Region/${RNum}`);
+    const response = await fetch(`https://localhost:7006/api/Region/${RNum}`);
     const data = await response.json();
     var innerHtml = '<table class="table"><tr><th>ceType</th><th>ceDate</th></tr>';
     for (let i = 0; i < data.length; i++) {
@@ -52,4 +52,11 @@ async function goToCartPage(subid, price) {
     const response = await fetch(`https://localhost:7238/api/Cart/api/CartAddSubscription/cart=${cartid}&cdate=${price}&cartid=${cdate}&price=${subid}`);
     const data = await response.json();
     window.location.href("https://localhost:7228/Cart");
+}
+
+async function displayUserData(UID) {
+    const response = await fetch(`https://localhost:7228/api/Users/${UID}`);
+    const data await response.json();
+    document.getElementById('userFirstName').innerHTML = data[0].userFirstName; 
+    document.getElementById('userFirstName').style.visibility = "visible";
 }
